@@ -1,0 +1,149 @@
+/* Desktop - 1 */
+header, body {
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #1F1F21;
+}
+
+/* makas */
+#scissors {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 870px;
+top: 331px;
+
+background: #E1E1E1;
+}
+
+/* kağıt */
+#paper {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 670px;
+top: 331px;
+
+background: #E1E1E1;
+}
+
+/* taş */
+#rock {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 470px;
+top: 331px;
+
+background: #E1E1E1;
+}
+
+/* ✊ */
+#rock_emoji {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 496px;
+top: 357px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+}
+
+
+/* ✋ */
+#hand_emoji {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 696px;
+top: 357px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+}
+
+
+/* ✂ */
+#scissors_emoji{
+position: absolute;
+width: 48px;
+height: 48px;
+left: 896px;
+top: 357px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+}
+
+
+/* Rectangle 1 */
+#scoreboard {
+box-sizing: border-box;
+
+position: absolute;
+width: 200px;
+height: 100px;
+left: calc(50% - 200px/2);
+top: 64px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+
+/* 0 : 0 */
+#scores {
+position: absolute;
+width: 100px;
+height: 62px;
+left: 670px;
+top: 83px;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+
+color: #AA01FA;
+
+border: 1px solid #000000;
+}
+
+/* Computer chose Rock. You lose! */
+#text {
+position: absolute;
+width: 665px;
+height: 51px;
+left: 387px;
+top: 213px;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+
+color: #FFFFFF;
+}
