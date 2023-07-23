@@ -1,7 +1,11 @@
+rockButton.addEventListener('click', rock())
+paperkButton.addEventListener('click', paper())
+scissorsButton.addEventListener('click', scissors())
 array = [rock, paper, scissors]
 
 function rock() {
   player = rock
+  console.log("kaya")
   number = Math.floor(Math.random() * 4)
   computer = array[number]
   compareRock()
@@ -21,10 +25,15 @@ function scissors() {
   compareScissors()
 }
 
-tie() {}
-playerLoses() {}
-playerWins() {}
-
+tie() {
+  document.getElementById("text").innerHTML = "It's a tie! Let's play again."
+}
+playerLoses() { 
+  document.getElementById("text").innerHTML = "You lose! Come on, you can do it."
+}
+playerWins() { 
+  document.getElementById("text").innerHTML = "YOU WIN! I knew you could do it."
+}
 
 function compareRock() {
   if(computer==rock) {

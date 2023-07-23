@@ -8,7 +8,7 @@ background: #1F1F21;
 }
 
 /* makas */
-#scissors {
+#scissorsButton {
 position: absolute;
 width: 100px;
 height: 100px;
@@ -19,7 +19,7 @@ background: #E1E1E1;
 }
 
 /* kağıt */
-#paper {
+#paperButton {
 position: absolute;
 width: 100px;
 height: 100px;
@@ -30,7 +30,7 @@ background: #E1E1E1;
 }
 
 /* taş */
-#rock {
+#rockButton {
 position: absolute;
 width: 100px;
 height: 100px;
