@@ -1,16 +1,28 @@
-rockButton.addEventListener('click', rock)
-paperButton.addEventListener('click', paper)
-scissorsButton.addEventListener('click', scissors)
+var player = null
+var computer = null
 
-function rock() {
+const rock = rock
+const paper = paper
+const scissors = scissors
+
+rockButton.addEventListener('click', playerRock)
+paperButton.addEventListener('click', playerPaper)
+scissorsButton.addEventListener('click', playerScissors)
+
+function restart() {
+  location.reload()
+}
+
+function playerRock() {
   player = rock
   array = [rock, paper, scissors]
   number = Math.floor(Math.random() * 4)
   computer = array[number]
+  document.getElementById("computerText").innerHTML = "Computer chose " + array[number]
   compareRock()
 }
 
-function paper() {
+function playerPaper() {
   player = paper
   array = [rock, paper, scissors]
   number = Math.floor(Math.random() * 4)
@@ -18,7 +30,7 @@ function paper() {
   comparePaper()
 }
 
-function scissors() {
+function playerScissors() {
   player = scissors
   array = [rock, paper, scissors]
   number = Math.floor(Math.random() * 4)

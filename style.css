@@ -5,6 +5,7 @@ width: 1440px;
 height: 1024px;
 
 background: #1F1F21;
+overflow: hidden;
 }
 
 /* makas */
@@ -45,7 +46,7 @@ background: #E1E1E1;
 position: fixed;
 width: 48px;
 height: 48px;
-left: 735px;
+left: 733px;
 top: 312px;
 
 font-family: 'Inter';
@@ -63,7 +64,7 @@ color: #000000;
 position: fixed;
 width: 48px;
 height: 48px;
-left: 935px;
+left: 934px;
 top: 312px;
 
 font-family: 'Inter';
@@ -116,7 +117,7 @@ position: fixed;
 width: 100px;
 height: 62px;
 left: 910px;
-top: 48px;
+top: 46px;
 
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-style: normal;
@@ -144,4 +145,32 @@ line-height: 58px;
 text-align: center;
 
 color: #FFFFFF;
+}
+
+h4 {
+position: absolute;
+width: 665px;
+height: 51px;
+left: 620px;
+top: 450px;
+
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 58px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#restartButton {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 900px;
+  top: 600px;
+
+  background: #E1E1E1;
 }
