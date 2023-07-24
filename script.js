@@ -1,9 +1,6 @@
 var player = null
 var computer = null
-
-const rock = rock
-const paper = paper
-const scissors = scissors
+const array = ['rock', 'paper', 'scissors']
 
 rockButton.addEventListener('click', playerRock)
 paperButton.addEventListener('click', playerPaper)
@@ -14,27 +11,26 @@ function restart() {
 }
 
 function playerRock() {
-  player = rock
-  array = [rock, paper, scissors]
-  number = Math.floor(Math.random() * 4)
+  player = array [0]
+  number = Math.floor(Math.random() * 3)
   computer = array[number]
-  document.getElementById("computerText").innerHTML = "Computer chose " + array[number]
+  document.getElementById("computerText").innerHTML = "Computer chose " + array[number] + "."
   compareRock()
 }
 
 function playerPaper() {
-  player = paper
-  array = [rock, paper, scissors]
-  number = Math.floor(Math.random() * 4)
+  player = array [1]
+  number = Math.floor(Math.random() * 3)
   computer = array[number]
+  document.getElementById("computerText").innerHTML = "Computer chose " + array[number] + "."
   comparePaper()
 }
 
 function playerScissors() {
-  player = scissors
-  array = [rock, paper, scissors]
-  number = Math.floor(Math.random() * 4)
+  player = array [2]
+  number = Math.floor(Math.random() * 3)
   computer = array[number]
+  document.getElementById("computerText").innerHTML = "Computer chose " + array[number] + "."
   compareScissors()
 }
 
@@ -49,31 +45,31 @@ function playerWins() {
 }
 
 function compareRock() {
-  if(computer==rock) {
+  if(computer==array[0]) {
     tie()
-  } else if(computer==paper) {
+  } else if(computer==array [1]) {
     playerLoses()
-  } else if(computer==scissors) {
+  } else if(computer==array [2]) {
     playerWins()
   }
 }
 
 function comparePaper() {
-  if(computer==paper) {
+  if(computer==array [1]) {
     tie()
-  } else if(computer==scissors) {
+  } else if(computer==array [2]) {
     playerLoses()
-  } else if(computer==rock) {
+  } else if(computer==array [0]) {
     playerWins()
   }
 }
 
 function compareScissors() {
-  if(computer==scissors) {
+  if(computer==array [2]) {
     tie()
-  } else if(computer==rock) {
+  } else if(computer==array [0]) {
     playerLoses()
-  } else if(computer==paper) {
+  } else if(computer==array [1]) {
     playerWins()
   }
 }
