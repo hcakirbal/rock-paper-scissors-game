@@ -2,6 +2,9 @@ var player = null
 var computer = null
 const array = ['rock', 'paper', 'scissors']
 
+var playersScore = 0
+var computersScore = 0
+
 rockButton.addEventListener('click', playerRock)
 paperButton.addEventListener('click', playerPaper)
 scissorsButton.addEventListener('click', playerScissors)
@@ -77,9 +80,11 @@ function compareScissors() {
 }
 
 function playerPlusOne() {
-
+  playersScore += 1
+  document.getElementById("playerScore").innerHTML = playersScore
 }
 
 function computerPlusOne() {
-
+  computersScore += 1
+  document.getElementById("computerScore").innerHTML = computersScore
 }
