@@ -219,9 +219,14 @@ color: #FFFFFF;
 #restartButton {
   position: absolute;
   width: 100px;
-  height: 100px;
+  height: 50px;
   left: 900px;
   top: 600px;
 
   background: #E1E1E1;
+}
+
+#restartText {
+  font-size: larger;
+  font-family: fantasy;
 }
