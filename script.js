@@ -39,9 +39,11 @@ function tie() {
 }
 function playerLoses() { 
   document.getElementById("text").innerHTML = "You lose! Come on, you can do it."
+  computerPlusOne()
 }
 function playerWins() { 
   document.getElementById("text").innerHTML = "YOU WIN! I knew you could do it."
+  playerPlusOne()
 }
 
 function compareRock() {
@@ -72,4 +74,12 @@ function compareScissors() {
   } else if(computer==array [1]) {
     playerWins()
   }
+}
+
+function playerPlusOne() {
+
+}
+
+function computerPlusOne() {
+
 }
