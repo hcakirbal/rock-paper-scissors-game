@@ -1,7 +1,6 @@
 var player = null
 var computer = null
 const array = ['rock', 'paper', 'scissors']
-
 var playersScore = 0
 var computersScore = 0
 
