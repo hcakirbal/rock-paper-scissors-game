@@ -1,4 +1,2 @@
-*.css linguist-detectable=false
-*.js linguist-detectable=true
-# Fix syntax highlighting on GitHub to allow comments
-.vscode/*.json linguist-language=JSON-with-Comments
+.css linguist-detectable=false
+.js linguist-detectable=true
